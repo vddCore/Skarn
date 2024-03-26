@@ -1,0 +1,15 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="using:System">
+    <FontFamily x:Key="BreezeMainFont">fonts:OpenSans#OpenSans, Default</FontFamily>
+    
+    <sys:Double x:Key="BreezeFontSizeSmall">10</sys:Double>
+    <sys:Double x:Key="BreezeFontSizeNormal">12</sys:Double>
+    <sys:Double x:Key="BreezeFontSizeLarge">16</sys:Double>
+    
+    <sys:Double x:Key="BreezeDisabledOpacity">0.5</sys:Double>
+    
+    <Thickness x:Key="BreezeButtonPadding">4,8</Thickness>
+    <Thickness x:Key="BreezeButtonBorderThickness">1</Thickness>
+    <CornerRadius x:Key="BreezeButtonCornerRadius">2</CornerRadius>
+</ResourceDictionary>

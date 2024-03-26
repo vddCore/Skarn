@@ -1,0 +1,9 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ui="clr-namespace:Typhoon.UI;assembly=Typhoon.UI"
+             x:Class="Skarn.App"
+             RequestedThemeVariant="Default">
+    <Application.Styles>
+        <ui:BreezeTheme  />
+    </Application.Styles>
+</Application>

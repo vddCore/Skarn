@@ -1,0 +1,56 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ControlTheme x:Key="{x:Type Button}"
+                TargetType="Button">
+    <Setter Property="Background" Value="{DynamicResource BreezeButtonBackgroundIdleBrush}" />
+    <Setter Property="BorderBrush" Value="{DynamicResource BreezeButtonBorderIdleBrush}" />
+    <Setter Property="BorderThickness" Value="{DynamicResource BreezeButtonBorderThickness}" />
+    <Setter Property="Foreground" Value="{DynamicResource BreezeBaseForegroundBrush}" />
+    <Setter Property="HorizontalContentAlignment" Value="Center" />
+    <Setter Property="VerticalContentAlignment" Value="Center" />
+    <Setter Property="CornerRadius" Value="{DynamicResource BreezeButtonCornerRadius}" />
+    <Setter Property="Padding" Value="{DynamicResource BreezeButtonPadding}" />
+    <Setter Property="Template">
+      <ControlTemplate>
+        <ContentPresenter Name="PART_ContentPresenter"
+                          Padding="{TemplateBinding Padding}"
+                          HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                          VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                          Background="{TemplateBinding Background}"
+                          BorderBrush="{TemplateBinding BorderBrush}"
+                          BorderThickness="{TemplateBinding BorderThickness}"
+                          Content="{TemplateBinding Content}"
+                          ContentTemplate="{TemplateBinding ContentTemplate}"
+                          CornerRadius="{TemplateBinding CornerRadius}"
+                          RecognizesAccessKey="True"
+                          TextElement.Foreground="{TemplateBinding Foreground}" />
+      </ControlTemplate>
+    </Setter>
+    
+    <Style Selector="^ /template/ ContentPresenter#PART_ContentPresenter">
+      <Setter Property="Transitions">
+        <Transitions>
+          <BrushTransition Property="BorderBrush" Duration="0:0:0.08" />
+          <BrushTransition Property="Background" Duration="0:0:0.08" />
+        </Transitions>
+      </Setter>
+    </Style>
+    
+    <Style Selector="^:focus-within /template/ ContentPresenter#PART_ContentPresenter">
+      <Setter Property="Background" Value="{DynamicResource BreezeButtonBackgroundFocusBrush}" />
+      <Setter Property="BorderBrush" Value="{DynamicResource BreezeButtonBorderFocusBrush}" />
+    </Style>
+    
+    <Style Selector="^:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+      <Setter Property="BorderBrush" Value="{DynamicResource BreezeButtonBorderHoverBrush}" />
+    </Style>
+    
+    <Style Selector="^:pressed /template/ ContentPresenter#PART_ContentPresenter">
+      <Setter Property="Background" Value="{DynamicResource BreezeButtonBackgroundHotBrush}" />
+    </Style>
+    
+    <Style Selector="^:disabled">
+      <Setter Property="Opacity" Value="{DynamicResource BreezeDisabledOpacity}" />
+    </Style>
+  </ControlTheme>
+</ResourceDictionary>

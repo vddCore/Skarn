@@ -1,0 +1,37 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Dark">
+            <SolidColorBrush x:Key="BreezeBaseBackgroundBrush" 
+                             Color="{DynamicResource BreezeBaseBackgroundColor}" />
+            
+            <SolidColorBrush x:Key="BreezeBaseForegroundBrush"
+                             Color="{DynamicResource BreezeBaseForegroundColor}" />
+            
+            <SolidColorBrush x:Key="BreezeBaseControlBorderBrush"
+                             Color="{DynamicResource BreezeBaseControlBorderColor}" />
+            
+            <SolidColorBrush x:Key="BreezeTransparencyBackgroundFallback"
+                             Color="{DynamicResource BreezeTransparencyBackgroundFallbackColor}" />
+            
+            <SolidColorBrush x:Key="BreezeButtonBackgroundIdleBrush"
+                             Color="{DynamicResource BreezeButtonBackgroundIdleColor}" />
+            
+            <SolidColorBrush x:Key="BreezeButtonBackgroundHotBrush"
+                             Color="{DynamicResource BreezeButtonBackgroundHotColor}" />
+
+            <SolidColorBrush x:Key="BreezeButtonBackgroundFocusBrush"
+                             Color="{DynamicResource BreezeButtonBackgroundFocusColor}" />
+
+            
+            <SolidColorBrush x:Key="BreezeButtonBorderIdleBrush"
+                             Color="{DynamicResource BreezeButtonBorderIdleColor}" />
+            
+            <SolidColorBrush x:Key="BreezeButtonBorderHoverBrush"
+                             Color="{DynamicResource BreezeButtonBorderHoverColor}" />
+            
+            <SolidColorBrush x:Key="BreezeButtonBorderFocusBrush"
+                             Color="{DynamicResource BreezeButtonBorderFocusColor}" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>

@@ -1,0 +1,15 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Color x:Key="BreezeBaseBackgroundColor">#2A2E32</Color>
+    <Color x:Key="BreezeBaseForegroundColor">#FCFCFC</Color>
+    <Color x:Key="BreezeBaseControlBorderColor">#6E7175</Color>
+    <Color x:Key="BreezeTransparencyBackgroundFallbackColor">#FCFCFC</Color>
+    
+    <Color x:Key="BreezeButtonBackgroundIdleColor">#31363B</Color>
+    <Color x:Key="BreezeButtonBackgroundHotColor">#355E75</Color>
+    <Color x:Key="BreezeButtonBackgroundFocusColor">#334E5E</Color>
+    
+    <Color x:Key="BreezeButtonBorderIdleColor">#6E7175</Color>
+    <Color x:Key="BreezeButtonBorderHoverColor">#3DAEE9</Color>
+    <Color x:Key="BreezeButtonBorderFocusColor">#5993B2</Color>
+</ResourceDictionary>
